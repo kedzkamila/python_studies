@@ -223,27 +223,27 @@
 
 #rozwiązanie chatgpt
 
-# import random
+import random
 
-# number = random.randint(1, 10)
-# amount_of_guesses = 0
+number = random.randint(1, 10)
+amount_of_guesses = 0
 
-# while True:
-#     guess = input("Give a number between 1 and 10: ")
+while True:
+    guess = input("Give a number between 1 and 10: ")
 
-#     if not guess.isdigit():
-#         print("Invalid input! Please enter a valid number.")
-#         continue  # Pomija resztę pętli i wraca do początku
+    if not guess.isdigit():
+        print("Invalid input! Please enter a valid number.")
+        continue  # Pomija resztę pętli i wraca do początku
 
-#     guess = int(guess)
-#     amount_of_guesses += 1
+    guess = int(guess)
+    amount_of_guesses += 1
 
-#     if guess == number:
-#         print("You guessed the number!")
-#         break
-#     elif guess > number:
-#         print("The number is too high.")
-#     else:
-#         print("The number is too low.")
+    if guess == number:
+        print("You guessed the number!")
+        break
+    elif guess > number:
+        print("The number is too high.")
+    else:
+        print("The number is too low.")
 
-# print(f"It took you {amount_of_guesses} guesses.")
+print(f"It took you {amount_of_guesses} guesses.")
